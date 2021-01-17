@@ -22,3 +22,5 @@ Command to start webpack dev server:
 Command to create a bundle:
 
 ### `npm run build`
+
+App is hosted in firebase and can be accessed using `https://simple-calculator-37242.web.app/`
