@@ -1,0 +1,26 @@
+.keypad-container {
+    width: 100%;
+    height: 43vh;
+    display: grid;
+}
+.row {
+    display: flex;
+    width: 100%;
+    flex: 1 1 0;
+}
+.btn {
+    border: 0.02rem solid #000;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+    flex: 1 1 0;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.btn.dark {
+    background-color: #666666;
+}

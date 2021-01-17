@@ -1,0 +1,21 @@
+.scientific-contianer {
+    padding-bottom: 5vh;
+}
+
+.scientific-mode {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scientific-contianer .dark {
+    background-color: #666666;
+    border-color:#fff ;
+}
+
+.scientific-keys {
+    margin-top: 5vh;
+    margin-left: 3vw
+}
+

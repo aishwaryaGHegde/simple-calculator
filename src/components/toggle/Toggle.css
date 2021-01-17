@@ -1,0 +1,10 @@
+.toggle-container {
+    padding-bottom: 5vh;
+}
+
+.button {
+    width: 20vw;
+    height: 5vh;
+    outline: none;
+    font-size: 1rem;
+}
