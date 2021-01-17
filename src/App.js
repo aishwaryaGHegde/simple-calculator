@@ -57,30 +57,29 @@ function App() {
 
   function handleScientificBtnClick(event) {
     let temp = displayVal
+    if (inputs["operator"]) {
+      temp = PerformBasicAirthmeticCalculations(inputs.operator, inputs.op1, inputs.op2)
+    }
     switch(event) {
       case Constants.KEYS.SCIENTIFIC_BUTTONS[0]:
-        temp = (Number(displayVal) * -1)+""
+        temp = (Number(temp) * -1)+""
         break;
       case Constants.KEYS.SCIENTIFIC_BUTTONS[1]:
-        temp = (Number(displayVal) * Number(displayVal))+""
+        temp = (Number(temp) * Number(temp))+""
         break;
       case Constants.KEYS.SCIENTIFIC_BUTTONS[2]:
-        temp = (Math.sqrt(Number(displayVal)))+""
+        temp = (Math.sqrt(Number(temp)))+""
         break;
       default:
         console.log("Invalid Scientifc Operation")
         break;
     }
     setDisplayVal(temp)
-    if (inputs["operator"]) {
-      setInputs(Object.assign(inputs, {
-        "op2": temp 
-      }))
-    } else {
-      setInputs(Object.assign(inputs, {
-        "op1": temp 
-      }))
-    }
+    setInputs(Object.assign(inputs, {
+      "op1": temp,
+      "operator": "",
+      "op2": ""
+    }))
   }
 
   function handleThemeClick(theme) {
